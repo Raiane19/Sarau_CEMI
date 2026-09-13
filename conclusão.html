@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusão</title>
+    <link rel="shortcut icon" href="Icons8-Ios7-Cinema-Theatre-Mask.512.png" type="image/x-icon">
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+        @font-face {
+            font-family: blood;
+            src: url(bloodcrow.ttf) format(truetype);
+        }
+        *{
+        
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --cor0:#AC99F2;
+            --cor1:#9980F2;
+            --cor2:#8352EB;
+            --cor3:#6E1AE8;
+            --cor4:#611DF2;
+            --cor5:#A6937C;
+            --cor6:#efe3d3;
+            --cor7:#f9f5ef;
+        
+        
+
+            --font-opensans:open sans-serif;
+            --fonte-karla:'Karla sans' cursive;
+            --font-afacad:'Afacad flux',sans-serif;
+            
+        }
+        
+
+
+        header{
+            background-color:var(--cor4);
+            min-height: 130px;
+            text-align: center;
+            padding-top: 5px;
+
+
+
+        }
+        header > h1{
+            color: white;
+            font-family:var(--font-opensans);
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.351);
+            
+
+
+        }
+        .logo{
+            top: 40%;
+        }
+
+
+        body{
+            background-color:var(--cor6);
+            background-attachment: fixed;
+        }
+        main{
+            min-width: 300px;
+            max-width: 1000px;
+            padding: 20px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
+            border-bottom-left-radius:10px ;
+            border-bottom-right-radius:10px ;
+            }
+            main p{
+                margin: 15px 0px;
+                text-align: justify;
+                text-indent: 30px;
+                font-size: 1em;
+                line-height: 2em;
+            }
+            main h1{
+                color: var(--cor3);
+                 font-family:var(--font-opensans) ;  
+             }
+        .pri{
+            margin: 0px -20px 30px -20px;
+            color: black;
+            ;
+            padding: 20px;
+            padding-bottom: 5px;
+            
+        }
+        div.video{
+            background-color: var(--cor0);
+            margin: 0px -20px 30px -20px;
+            padding: 20px;
+            padding-bottom: 50%;
+            position: relative;
+        }
+        div.video > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+            
+             
+        .titulo{
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 60px;
+            
+        }
+        
+
+        nav {
+            background-color: var(--cor4);
+            color: white;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu a {
+            font-weight: bolder;
+            text-decoration: none;
+            color:black;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+            font-family: var(--font-afacad);
+            font-size: 17px;
+            
+        }
+
+        .menu a:hover {
+            background-color:var(--cor3);
+            color: var(--cor0);
+            border-radius: 5px;
+        }
+
+        /* Menu Toggle (Hambúrguer) */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color:var(--cor1);
+            }
+
+            .menu li {
+                margin: 0;
+                padding: 10px;
+                border-bottom: 1px solid white;
+            }
+
+            .menu a {
+                display: block;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu-container {
+                position: relative;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+        }
+        section{
+            background-color: #FFDE50;
+        }
+
+        .galeria a{
+            background-color: yellowgreen;
+            color: var(--cor3);
+            width: 40px;
+            height: 40pxpx;
+            padding: 5px;
+            border-radius: 2px;
+            text-decoration: none;
+        }
+        .galeria a:hover{
+            background-color: var(--cor1);
+            color: white;
+        }
+        @media (max-width:2000px) 
+        {   
+        
+        footer{
+            background-color:var(--cor4) ;
+          
+        }
+        footer h3{
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:0px;
+            font-size: larger;
+            width: 100%;
+        
+        }
+        }
+        .n{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo" class="titulo">Peça Teatral</h1>
+        <nav>
+          <div class="menu-container">
+    
+            <div class="logo">
+                <img src="img/LOGO CEMI.png" alt="logo CEMI" height="60px" width=55px">
+            </div>
+          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+              
+        
+          <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./resumo.html">Resumo</a></li> 
+            <li><a href="./introdução.html"">Introdução</a></li>
+            <li><a href="./desenvolvimento.html">Desenvolvimento</a></li>      
+            <li><a href="./conclusão.html">Conclusão</a></li>
+          </ul>
+        </div>
+          
+    
+        </nav>
+      <script src="script.js"></script>
+    </header>
+    <main>
+        <h1>Conclui-se que...</h1>
+        <p>A protagonista, Glorinha, ao longo da peça, enfrenta o dilema de se libertar da moral opressora imposta por sua família, representada principalmente pelo tio Raul, que tem uma postura moralista, mas também demonstra ser hipócrita e corrupto. No final, os segredos e a falsidade dos personagens vêm à tona, revelando que as tentativas de controle e manipulação são inúteis e que a hipocrisia que permeia as relações sociais acaba levando à destruição.</p>
+           <p> Perdoa-me por me traíres” é uma obra-prima complexa e instigante que convida o público a questionar a natureza humana, os limites da moral e a busca por redenção em meio à escuridão da alma. Uma leitura intensa e reflexiva, indicada para leitores maduros que apreciam dramas provocativos e inovadores.
+        </p>
+        <h1 class="pri">Veja o vídeo completo aqui em baixo &#x2B07</h1>
+       
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cWGRStFbwVQ?si=0fmXxA0eZuiU09U9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        <div class="galeria">
+            
+            <a href="galeria.html" >Acesse nossa galeria de Fotos</a>
+        </div>
+    </main>
+      
+    <footer>
+        <h3 class="n">@2024 Raiane dos Santos</h3>
+        <h3>Centro de Ensino Médio Integrado do Cruzeiro</h3>
+      </footer>  
+</body>
+</html>

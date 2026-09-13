@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento</title>
+    <link rel="shortcut icon" href="Icons8-Ios7-Cinema-Theatre-Mask.512.png" type="image/x-icon">
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+        @font-face {
+            font-family: blood;
+            src: url(bloodcrow.ttf) format(truetype);
+        }
+        *{
+        
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --cor0:#AC99F2;
+            --cor1:#9980F2;
+            --cor2:#8352EB;
+            --cor3:#6E1AE8;
+            --cor4:#611DF2;
+            --cor5:#A6937C;
+            --cor6:#efe3d3;
+            --cor7:#f9f5ef;
+        
+
+            --font-opensans:open sans-serif;
+            --fonte-karla:'Karla sans' cursive;
+            --font-afacad:'Afacad flux',sans-serif;
+            
+        }
+        
+
+
+        header{
+            background-color:var(--cor4);
+            min-height: 130px;
+            text-align: center;
+            padding-top: 5px;
+
+
+
+        }
+        header > h1{
+            color: white;
+            font-family:var(--font-opensans);
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.351);
+            
+
+
+        }
+        .logo{
+            top: 40%;
+        }
+
+
+        body{
+            background-color:var(--cor6);
+            background-attachment: fixed;
+        }
+        .titulo{
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 60px;
+            
+        }
+        main{
+            min-width: 300px;
+            max-width: 1000px;
+            padding: 20px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
+            border-bottom-left-radius:10px ;
+            border-bottom-right-radius:10px ;
+         }
+         main p{
+            margin: 15px 0px;
+            text-align: justify;
+            text-indent: 30px;
+            font-size: 1em;
+            line-height: 2em;
+        }
+        main h1{
+           color: var(--cor3);
+            font-family:var(--font-opensans) ;  
+        }
+        main h2{
+            color: var(--cor2);
+            font-family:var(--font-opensans) ;
+        }
+        main img{
+            width: 90%;
+           height: 600px;
+        }
+
+        nav {
+            background-color:var(--cor4);
+            color: white;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu a {
+            font-weight: bolder;
+            text-decoration: none;
+            color:black;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+            font-family: var(--font-afacad);
+            font-size: 17px;
+        }
+
+        .menu a:hover {
+            background-color:var(--cor3);
+            color: var(--cor0);
+            border-radius: 5px;
+        }
+
+        /* Menu Toggle (Hambúrguer) */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color:var(--cor1);
+            }
+
+            .menu li {
+                margin: 0;
+                padding: 10px;
+                border-bottom: 1px solid white;
+            }
+
+            .menu a {
+                display: block;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu-container {
+                position: relative;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+        }
+        section{
+            background-color: #FFDE50;
+        }
+
+        @media (max-width:2000px) 
+{   
+
+footer{
+    background-color:var(--cor4) ;
+  
+}
+footer h3{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0px;
+    font-size: larger;
+    width: 100%;
+
+}
+}
+        .n{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+            <h1 id="titulo" class="titulo">Peça Teatral</h1>
+            <nav>
+              <div class="menu-container">
+        
+                <div class="logo">
+                    <img src="img/LOGO CEMI.png" alt="logo CEMI" height="60px" width=55px">
+                </div>
+              <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        
+        
+              <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./resumo.html">Resumo</a></li>
+                <li><a href="./introdução.html"">Introdução</a></li>
+                <li><a href="./desenvolvimento.html">Desenvolvimento</a></li>
+                <li><a href="./conclusão.html">Conclusão</a></li>
+              </ul>
+            </div>
+        
+        
+            </nav>
+    </header>
+      <script src="script.js"></script>
+      <main>
+        <h1>Oque a peça aborda</h1>
+        <p>Em “Perdoa-me por me traíres”, Nelson Rodrigues tece uma trama densa e perturbadora, mergulhando em um universo de relações complexas e personagens multifacetados. A jovem Glorinha, de 16 anos, vive sob a tutela de seu tio Raul, um homem dominador e violento, e de sua tia Odete, uma mulher psicologicamente abalada, que vive apenas por uma frase “está na hora da homeopatia”. </p>
+        <p>Movida pela tragédia e pelo desejo de vingança, Glorinha se envolve em desejos proibidos, prostituição e jogos de poder, e busca também identidade e justiça, onde oscila entre a inocência e a depravação. Raul, consumido pelo ódio e pela culpa, tenta controlar a vida da sobrinha.</p>
+        
+        <h2>Oque ela Explora</h2>
+        <p>
+
+            A peça explora os motivos e as consequências de suposta traição e sobre o machismo estruturado, apresentando, de forma secundária, a história de Gilberto e Judite, pais de Glorinha, questionando a justiça e a possibilidade de redenção. A violência física e psicológica permeia a obra, assim como a exploração da sexualidade como forma de poder e dominação. As relações familiares são distorcidas e disfuncionais, desafiando os valores tradicionais e a hipocrisia social.</p>                
+    </main>
+    <footer>
+        <h3 class="n">@2024 Raiane dos Santos</h3>
+        <h3>Centro de Ensino Médio Integrado do Cruzeiro</h3>
+      </footer>  
+</body>
+</html>
