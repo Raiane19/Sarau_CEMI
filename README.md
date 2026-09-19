@@ -16,3 +16,9 @@ A escolha da peça possibilitou ao grupo trabalhar elementos do teatro, da inter
 | 📖 **Gênero** | Tragédia carioca / tragédia de costumes |
 | 🏫 **Evento** | Sarau do CEMIC |
 | 🎬 **Atividade** | Apresentação teatral |
+
+## 🌐 Acesse o site
+
+Clique no link abaixo para acessar o site desenvolvido:
+
+🔗 [Acessar o site](https://sarau-cemi.netlify.app/)
